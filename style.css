@@ -1,0 +1,114 @@
+/* Общие стили для всего сайта */
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif; /* подключаем шрифт */
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Заголовки */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Стиль контейнера */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  flex-wrap: wrap; /* для адаптивности */
+}
+nav a {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+nav a.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+nav a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Основной контент */
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+
+/* Новости */
+#news {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Адаптивность */
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Для галереи и слайдшоу */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.photo-item {
+  flex: 1 1 200px;
+  text-align: center;
+}
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Анимация появления элементов (например, карточек) */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Фотографии и описание</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .photo-item {
+    width: 200px;
+    text-align: center;
+  }
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .description {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }  
+  a:hover {
+    background-color: #3498db;
+  }
+</style>
+</head>
+<body>
+
+<h2>Мои фотографии</h2>
+
+<div class="gallery">
+  <div class="photo-item">
+    <img src="images/1.jpg" alt="На природе" />
+    <div class="description">
+      На этой фотографии запечатлён момент на природе — яркое солнце пробивается сквозь густые листья деревьев, создавая тёплый и уютный свет. Вокруг — зелень, свежая трава и спокойствие. Всё выглядит очень гармонично и умиротворяюще, словно этот момент остановился в времени, чтобы его можно было запомнить навсегда.
+    </div>
+  </div>
+  <div class="photo-item">
+    <img src="images/12.jpg" alt="Городской пейзаж" />
+    <div class="description">
+      На фото запечатлен городской пейзаж — шумная улица с движущимися машинами, пешеходами и современными зданиями. В центре внимания — яркие витрины магазинов, уличные фонари и рекламные щиты, создающие атмосферу городской суеты и динамики. Всё вокруг наполнено жизнью, энергией и ритмом большого города.
+    </div>
+  </div>
+  <div class="photo-item">
+    <img src="images/123.jpg" alt="Поверхность Луны" />
+    <div class="description">
+      На этой фотографии изображена поверхность Луны — серый, пыльный ландшафт с кратерами и неровностями. Вдали видно темное безоблачное небо, лишенное атмосферы. На переднем плане — следы от космических аппаратов и небольшие холмы. Всё вокруг выглядит безжизненно и загадочно, создавая ощущение бескрайнего и спокойного космического пространства.
+    </div>
+  </div>
+</div>
+
+<a href="../lab_itog/index.html">На основной сайт</a>
+
+</body>
+</html>
